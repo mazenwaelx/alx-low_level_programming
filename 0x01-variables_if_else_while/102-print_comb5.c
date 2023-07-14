@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - Enter point
+* main - Enter point
  *
  * Description: aa
  *
@@ -12,35 +12,31 @@
 
 int main(void)
 {
-int digit1 = 0, digit2;
-while (digit1 <= 9)
+int firstDigit = 0, seconDigit;
+
+while (firstDigit <= 99)
 {
-digit2 = 0;
-while (digit2 <= 9)
+seconDigit = firstDigit;
+while (seconDigit <= 99)
 {
-putchar(digit1 + '0');
-putchar(digit2 + '0');
-if (digit1 + digit2 != 18)
+if (seconDigit != firstDigit)
+{
+putchar((firstDigit / 10) + 48);
+putchar((firstDigit % 10) + 48);
+putchar(' ');
+putchar((seconDigit / 10) + 48);
+putchar((seconDigit % 10) + 48);
+if (firstDigit != 98 || seconDigit != 99)
 {
 putchar(',');
 putchar(' ');
 }
-digit2++;
 }
-digit1++;
+seconDigit++;
+}
+firstDigit++;
 }
 putchar('\n');
-
-
-
-
-
-
-
-
-
-
-
-
 return (0);
 }
+
