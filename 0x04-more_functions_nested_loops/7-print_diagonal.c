@@ -17,7 +17,7 @@ else
 for (num = 1; num <= n; num++)
 {
 _putchar(' ') * n;
-_putchar('\')'
+_putchar('\');
 _putchar('\n');
 }
 _putchar('\n');
