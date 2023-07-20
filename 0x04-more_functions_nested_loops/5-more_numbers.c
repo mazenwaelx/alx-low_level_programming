@@ -17,7 +17,7 @@ for (num = 0; num <= 14; num++)
 num2 = num;
 if (num > 9)
 {
-_putchar(1 + 48)
+_putchar(1 + 48);
 num2 = num % 10;
 }
 _putchar(num2 + 48);
