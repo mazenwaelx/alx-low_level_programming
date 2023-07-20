@@ -9,6 +9,7 @@
 void print_diagonal(int n)
 {
 int postn, space;
+
 if (n <= 0)
 _putchar('\n');
 else
@@ -21,4 +22,4 @@ _putchar (92); /*is equal to '/' char*/
 _putchar('\n');
 }
 }
-I
+}
