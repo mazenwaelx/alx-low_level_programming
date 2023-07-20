@@ -23,6 +23,6 @@ num2 = num % 10;
 _putchar(num2 + 48);
 }
 count++;
-}
 _putchar('\n');
+}
 }
