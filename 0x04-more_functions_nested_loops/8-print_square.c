@@ -18,7 +18,8 @@ for (col = 1; col <= size; col++)
 {
 _putchar(35);
 }
-}
 _putchar('\n');
+}
+
 }
 }
