@@ -11,7 +11,7 @@ void print_most_numbers(void)
 int ch = 48;
 while (ch <= 57)
 {
-if (c == 50 || c == 52)
+if (ch == 50 || ch == 52)
 continue;
 _putchar(ch);
 }
