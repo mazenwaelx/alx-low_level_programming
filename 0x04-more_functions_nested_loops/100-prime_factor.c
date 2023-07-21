@@ -23,19 +23,19 @@ return (sqrt);
  *@num: ff
 */
 
-void largest prime_factor(long int num)
+void largest_prime_factor(long int num)
 {
 int prmNu, largest;
 /* first divide with the smallest prime number (two) */
 while (num % 2 == 0)
 num = num / 2;
 /* num must be odd so we proceed to the next prime number (plus two) */
-for (prmNu = 3; prmNu <= sqrt(num); prmNu += 2)
+for (prmNu = 3; prmNu <= _sqrt(num); prmNu += 2)
 {
 while (num % prmNu == 0)
 {
 num = num / prmNu;
-largest prmNu;
+largest = prmNu;
 }
 }
 if (num > 2)
