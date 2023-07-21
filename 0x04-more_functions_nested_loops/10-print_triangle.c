@@ -14,12 +14,15 @@ if (size <= 0)
 _putchar('\n');
 else
 {
-for (space = size; space >= 0; --space)
-_putchar(' ');
 for (row = 1; row < size; row++)
 {
 for (col = 1; col < size; col++)
+{
+if ((row + col) <= size)
+_putchar(' ');
+else
 _putchar('#');
+}
 _putchar('\n');
 }
 }
