@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * main - Enter point
@@ -21,11 +20,11 @@ printf("Buzz");
 else if (num % 3 == 0 && num % 5 == 0)
 printf("FizzBuzz");
 else
-_putchar(num + 48);
+printf("%d", num);
 if (num != 100)
-_putchar(' ');
+printf(" ");
 else
-_putchar('\n');
+printf("\n");
 }
 return (0);
 }
