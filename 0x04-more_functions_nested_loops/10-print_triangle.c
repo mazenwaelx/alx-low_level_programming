@@ -14,7 +14,7 @@ if (size <= 0)
 _putchar('\n');
 else
 {
-for (space = size; space >= 1; space--)
+for (space = size; space >= 1; --space)
 _putchar(' ');
 for (row = 1; row < size; row++)
 {
