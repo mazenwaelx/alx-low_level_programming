@@ -1,11 +1,11 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * main - Enter point
  *
- * Description: aa
  *
- * Return: 0 (Success)
+ *
+ * Return: Always 0 (Success)
 */
 
 int main(void)
