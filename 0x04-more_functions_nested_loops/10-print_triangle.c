@@ -3,7 +3,7 @@
 
 /**
  * print_triangle - bbe
- * 
+ *
  * @size: ff
  * Return: Always 0 (Success)
 */
@@ -16,9 +16,9 @@ if (size <= 0)
 _putchar('\n');
 else
 {
-for (row = 1; row < size; row++)
+for (row = 1; row <= size; row++)
 {
-for (col = 1; col < size; col++)
+for (col = 1; col <= size; col++)
 {
 if ((row + col) <= size)
 _putchar(' ');
