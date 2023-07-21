@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 #include <stdio.h>
 /**
  * main - Enter point
@@ -21,11 +21,11 @@ printf("Buzz");
 else if (num % 3 == 0 && num % 5 == 0)
 printf("FizzBuzz");
 else
-putchar(num + 48);
+_putchar(num + 48);
 if (num != 100)
-putchar(' ');
+_putchar(' ');
 else
-putchar('\n');
+_putchar('\n');
 }
 return (0);
 }
