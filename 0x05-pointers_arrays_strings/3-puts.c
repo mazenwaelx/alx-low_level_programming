@@ -13,7 +13,7 @@ while (*str != '\0')
 {
 len++;
 str++;
-_putchar(str[len]);
+_putchar(str[len] + 48);
 }
 _putchar('\n');
 }
