@@ -16,6 +16,6 @@ printf("%d", a[len]);
 if (len != (n -1))
 printf(", ");
 else
-printf("\n")
+printf("\n");
 }
 }
