@@ -11,9 +11,9 @@ int len;
 
 while (*str != '\0')
 {
-_putchar(str[len]);
 len++;
 str++;
+_putchar(str[len]);
 }
 _putchar('\n');
 }
