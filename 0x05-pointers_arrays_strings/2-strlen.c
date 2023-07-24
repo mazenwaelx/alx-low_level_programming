@@ -3,7 +3,7 @@
 
 
 /**
- * swap_int - bbe
+ * _strlen - bbe
  * @s: gg
  * Return: Always 0
 */
