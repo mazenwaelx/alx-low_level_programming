@@ -18,4 +18,5 @@ _putchar(str[i + 1]);
 }
 else
 _putchar(str[i]);
+_putchar('\n')
 }
