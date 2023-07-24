@@ -14,7 +14,7 @@ while (src[len] != '\0')
 len++;
 for (i = 0; i < len; i++)
 {
-dest[i] = src[i - 1];
+dest[i] = src[i + 1];
 _putchar(dest[i]);
 }
 _putchar('\n');
