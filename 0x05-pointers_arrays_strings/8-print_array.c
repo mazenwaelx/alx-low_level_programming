@@ -7,7 +7,7 @@
  * Return: Always 0
 */
 
-void puts_array(int *a, int n)
+void print_array(int *a, int n)
 {
 int len;
 for (len = 0; len < n; len++)
