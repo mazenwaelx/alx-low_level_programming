@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * puts_array - bbe
+ * print_array - bbe
  * @a: ff
  * @n: bb
  * Return: Always 0
