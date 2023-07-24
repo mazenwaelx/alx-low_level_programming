@@ -13,6 +13,6 @@ while (s[len] != '\0')
 {
 len++;
 }
-for (len2 = len - 1; len2 >= 0; len2--)
+for (len2 = len - 2; len2 >= 0; len2--)
 _putchar(s[len2]);
 }
