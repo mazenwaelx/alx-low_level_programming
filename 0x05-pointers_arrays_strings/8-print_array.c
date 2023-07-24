@@ -12,8 +12,6 @@ void print_array(int *a, int n)
 int len;
 for (len = 0; len < n; len++)
 {
-_putchar(a[len]);
-_putchar(',');
-_putchar(' ');
+printf("%d, ", a[len]);
 }
 }
