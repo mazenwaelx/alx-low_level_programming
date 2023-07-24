@@ -15,5 +15,5 @@ for (len2 = len; len >= 0; len--)
 {
 _putchar(s[len]);
 }
-_putchar('\n')
+_putchar('\n');
 }
