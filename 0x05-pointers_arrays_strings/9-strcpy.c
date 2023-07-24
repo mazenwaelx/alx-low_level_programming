@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcoy - bbe
+ * _strcpy - bbe
  * @dest: ff
  * @src: bb
  * Return: Always 0
