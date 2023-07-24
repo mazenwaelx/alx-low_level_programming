@@ -17,6 +17,6 @@ if (len != (n -1))
 printf(", ");
 else
 printf("\n");
-printf("\n");
 }
+printf("\n")
 }
