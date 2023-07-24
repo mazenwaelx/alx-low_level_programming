@@ -6,14 +6,26 @@
  * Return: 0
 */
 
+#include "main.h"
+
 void rev_string(char *s)
 {
-int len = 0, len2;
-while (s[len] != '\0')
+char *start = s;
+char *end = s;
+char tmp;
+if (s)
 {
-len++;
+while (*end)
+{
+end++;
 }
-len--;
-for (len2 = len - 1; len2 >= 0; len2--)
-_putchar(s[len2]);
+end--;
+while (start < end)
+{
+tmp = *start;
+*start++ = *end;
+*end-- = tmp;
 }
+}
+}
+
