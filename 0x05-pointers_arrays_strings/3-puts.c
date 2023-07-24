@@ -1,3 +1,4 @@
+#include <cstring>
 #include<stdio.h>
 #include "main.h"
 /**
@@ -7,6 +8,9 @@
 */
 void _puts(char *str)
 {
-_putchar(*str);
+int len;
+
+for (len = 0; len < strlen(str); len++)
+_putchar(strlen[len]);
 _putchar('\n');
 }
