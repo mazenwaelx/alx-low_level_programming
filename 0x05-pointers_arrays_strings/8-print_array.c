@@ -18,5 +18,4 @@ printf(", ");
 else
 printf("\n");
 }
-printf("\n");
 }
