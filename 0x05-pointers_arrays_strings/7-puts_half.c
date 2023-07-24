@@ -14,9 +14,9 @@ len++;
 for (i = len / 2; i < len; len = i++)
 if(len % 2 != 0)
 {
-_putchar(str[i +1])
+_putchar(str[i +1]);
 }
 else
-_putchar(str[i])
+_putchar(str[i]);
 _putchar('\n');
 }
