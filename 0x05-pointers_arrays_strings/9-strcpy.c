@@ -16,4 +16,5 @@ dest[i] = src[i];
 _putchar(dest[i]);
 }
 _putchar('\n');
+return (0);
 }
