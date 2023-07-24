@@ -12,6 +12,7 @@ int len = 0, len2;
 
 while (s[len] != '\0')
 len++;
+len--;
 for (len2 = 0; len2 < len; len2++)
 _putchar(s[len2]);
 _putchar('\n');
