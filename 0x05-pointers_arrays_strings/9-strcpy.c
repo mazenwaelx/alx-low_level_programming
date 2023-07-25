@@ -17,6 +17,6 @@ for (i = 0; i < len; i++)
 dest[i] = src[i] + 1;
 _putchar(dest[i]);
 }
-_putchar('\n')
+_putchar('\n');
 return (0);
 }
