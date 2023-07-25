@@ -9,14 +9,13 @@
 
 char *_strcpy(char *dest, char *src)
 {
-int i ,len = 0;
-while (src[len] != '\0')
-len++;
-for (i = 0; i < len; i++)
+char *p = dest;
+while (*src != '\0')
 {
-dest[i] = src[i] + 1;
-_putchar(dest[i]);
+*dest = *src;
+dest++;
+src++;
 }
-_putchar('\n');
-return (0);
+*dest = '\0';
+return (p);
 }
