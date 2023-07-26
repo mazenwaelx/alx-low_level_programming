@@ -9,18 +9,14 @@
 
 char *_strcat(char *dest, char *src)
 {
-int len, len2, len3;
-while (*dest != '\0')
+while(*dest)
 {
-len++;
+dest++;
 }
-while (*src != '\0')
+while (*src)
 {
-len2++;
+*dest++ = *src++;
 }
-for(len3 = 0; len3 < (len + len2); len3++)
-{
-dest[len3] = src[len3] + dest[len3];
-}
-return (dest);
+*dest = '\0';
+return dest;
 }
