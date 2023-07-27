@@ -13,7 +13,7 @@ unsigned int i;
 int out[] = {4, 3, 0, 7, 1};
 while (*c)
 {
-for (i = 0; sizeof(val) / sizeof(char); i++)
+for (i = 0; i < sizeof(val) / sizeof(char); i++)
 {
 if (*c == val[i] || *c == val[i] + 32)
 *c = 48 + out[i];
