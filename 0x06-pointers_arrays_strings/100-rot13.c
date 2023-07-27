@@ -20,5 +20,5 @@ else if ((*p >= 'n' && *p <= 'z') || (*p >= 'N' && *p <= 'Z'))
 }
 p++;
 }
-return str;
+return (str);
 }
