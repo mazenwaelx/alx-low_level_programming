@@ -19,5 +19,6 @@ for (i = 0; i < size; i++)
 sum2 += a[i * size + (size - 1 - i)];
 }
 printf("%d", sum);
-printf("%d", sum2);
+printf(", ");
+printf("%d\n", sum2);
 }
