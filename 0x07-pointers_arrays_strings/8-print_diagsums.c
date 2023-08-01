@@ -18,6 +18,6 @@ for (i = 0; i < size; i++)
 {
 sum2 += a[i * size + (size - 1 - i)];
 }
-printf("Sum of first diagonal: %d\n", sum);
-printf("Sum of second diagonal: %d\n", sum2);
+printf("%d", sum);
+printf("%d", sum2);
 }
