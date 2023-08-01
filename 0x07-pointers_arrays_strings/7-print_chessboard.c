@@ -3,7 +3,6 @@
 /**
  * print_chessboard - bbe
  * @a: ff
- * Return: Always 0
 */
 
 void print_chessboard(char (*a)[8])
