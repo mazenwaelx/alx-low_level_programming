@@ -13,15 +13,21 @@ if (!*needle)
 {
 return (haystack);
 }
-char *a;
-while (*haystack != '\0')
+while (*haystack)
 {
-for (a = needle; *a != '\0'; a++)
+char *h = haystack;
+char *n = needle;
+
+while (*h && *n && (*h == *n))
 {
-if (*haystack == *needle)
+++h;
+++n;
+}
+if (!*n)
+{
 return (haystack);
 }
-haystack++;
+++haystack;
 }
 return (NULL);
 }
