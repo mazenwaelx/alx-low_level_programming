@@ -10,11 +10,11 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int count = 0;
 int is_accept = 0;
-
+char *a;
 while (*s != '\0')
 {
 is_accept = 0;
-for (char *a = accept; *a != '\0'; a++)
+for (a = accept; *a != '\0'; a++)
 {
 if (*s == *a)
 {
