@@ -28,8 +28,6 @@ else
 return (_sqrt_helper(n, mid + 1, end));
 }
 }
-#include <stdio.h>
-#include "main.h"
 
 /**
  * _sqrt_recursion - bbe
