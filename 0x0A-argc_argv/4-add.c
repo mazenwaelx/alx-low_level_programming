@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int i, sum;
 for (i = 0; i < argc; i++)
 {
-if (argv(argc) < '0' || argv(argc) > '9')
+if (argv[argc] < '0' || argv[argc] > '9')
 {
 printf("Error\n");
 return (1);
