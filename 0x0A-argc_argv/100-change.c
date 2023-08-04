@@ -23,16 +23,13 @@ if (cents < 0)
 printf("0\n");
 return (0);
 }
-int coins = 0;
-coins += cents / 25;
-cents %= 25;
-coins += cents / 10;
-cents %= 10;
-coins += cents / 5;
-cents %= 5;
-coins += cents / 2;
-cents %= 2;
-coins += cents;
-printf("%d\n", coins);
+int quarters = cents / 25;
+cents -= quarters * 25;
+int dimes = cents / 10;
+cents -= dimes * 10;
+int nickels = cents / 5;
+cents -= nickels * 5;
+int pennies = cents;
+printf("%d\n", quarters + dimes + nickels + pennies);
 return (0);
 }
