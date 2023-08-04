@@ -2,7 +2,8 @@
 
 /**
  * main - Enter point
- *
+ * @argc: lol
+ * @argv: go
  * Description: aa
  *
  * Return: 0 (Success)
