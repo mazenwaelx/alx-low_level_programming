@@ -4,7 +4,8 @@
 /**
  * main - Enter point
  *
- * Description: aa
+ * @argc: yo
+ * @argv: lol
  *
  * Return: 0 (Success)
 */
