@@ -19,11 +19,11 @@ len1++;
 while (s2[len2] != '\0')
 len2++;
 ar = (char *)malloc((len1 + len2 + 1) * sizeof(char));
+if (ar == NULL)
+return (NULL);
 for (i = 0; i < len1; i++)
 ar[i] = s1[i];
 for (i = 0; i < len2; i++)
 ar[len1 + i] = s2[i];
-if (ar == NULL)
-return (NULL);
 return (ar);
 }
