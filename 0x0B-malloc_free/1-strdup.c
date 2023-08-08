@@ -8,17 +8,18 @@
 */
 char *_strdup(char *str)
 {
+char *duplicate;
 if (str == NULL)
 {
 return (NULL);
 }
-size_t len = 0;
-size_t i;
+int len = 0;
+int i;
 while (str[len] != '\0')
 {
 len++;
 }
-char *duplicate = (char *)malloc((len + 1) * sizeof(char));
+duplicate = (char *)malloc((len + 1) * sizeof(char));
 if (duplicate == NULL)
 {
 return (NULL);
