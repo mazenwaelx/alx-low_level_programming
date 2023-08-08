@@ -14,6 +14,7 @@ if (str == NULL)
 return (NULL);
 }
 int len = 0;
+
 int i;
 while (str[len] != '\0')
 {
