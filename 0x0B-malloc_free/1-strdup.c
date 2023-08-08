@@ -8,14 +8,14 @@
 */
 char *_strdup(char *str)
 {
+int len = 0;
+int i;
+
 char *duplicate;
 if (str == NULL)
 {
 return (NULL);
 }
-int len = 0;
-
-int i;
 while (str[len] != '\0')
 {
 len++;
