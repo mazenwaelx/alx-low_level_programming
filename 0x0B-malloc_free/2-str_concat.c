@@ -25,6 +25,5 @@ for (i = 0; i < len2; i++)
 ar[len1 + i] = s2[i];
 if (ar == NULL)
 return (NULL);
-ar[len1 + len2] = '\0';
 return (ar);
 }
