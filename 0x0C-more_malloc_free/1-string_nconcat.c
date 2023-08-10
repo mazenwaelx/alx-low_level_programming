@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <limits.h>
 #include <stdlib.h>
 #include "main.h"
 
@@ -5,29 +7,29 @@
  * string_nconcat - bbe
  * @s1: ff
  * @s2: ff
- * @n: ff
+ * @n: lol
  * Return: Always 0
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *ptr;
-char *ar;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-unsigned int len1, len2, i;
-while (s1[len1] != '\0')
-len1++;
-while (s2[len2] != '\0')
-len2++;
-if (n >= len2)
-n = len2;
-ar = malloc((len1 + n + 1) * sizeof(char));
-if (ar == NULL)
+unsigned int s1_len = 0;
+unsigned int s2_len = 0;
+
+while (s1[s1_len] != '\0')
+s1_len++;
+while (s2[s2_len] != '\0')
+s2_len++;
+if (n >= s2_len)
+n = s2_len;
+char *result = malloc((s1_len + n + 1) * sizeof(char));
+if (result == NULL)
 return (NULL);
-ptr = ar;
+char *ptr = result;
 while (*s1 != '\0')
 {
 *ptr = *s1;
@@ -41,5 +43,8 @@ ptr++;
 s2++;
 n--;
 }
-return (ar);
+*ptr = '\0';
+return (result);
 }
+
+
