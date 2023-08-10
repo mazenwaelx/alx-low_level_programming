@@ -10,13 +10,23 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, j, len;
+unsigned int i, j, len, len1, len2;
 char *ptr;
-if (strlen(s2) < n)
+while (*s1 != '\0')
 {
-n = strlen(s2);
+len1++;
+s1++;
 }
-len = strlen(s1) + n + 1;
+while (*s2 != '\0')
+{
+len2++;
+s2++;
+}
+if (len2 < n)
+{
+n = len2;
+}
+len = len1 + n + 1;
 ptr = malloc(sizeof(char) * len);
 if (ptr == NULL)
 {
