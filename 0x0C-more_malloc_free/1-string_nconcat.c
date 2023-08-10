@@ -1,50 +1,34 @@
-#include <stdio.h>
-#include <limits.h>
-#include <stdlib.h>
 #include "main.h"
-
+#include <stdlib.h>
+#include <string.h>
 /**
  * string_nconcat - bbe
  * @s1: ff
- * @s2: ff
- * @n: lol
+ * @s2: gg
+ * @n: bo
  * Return: Always 0
 */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-if (s1 == NULL)
-s1 = "";
-if (s2 == NULL)
-s2 = "";
-unsigned int s1_len = 0;
-unsigned int s2_len = 0;
-
-while (s1[s1_len] != '\0')
-s1_len++;
-while (s2[s2_len] != '\0')
-s2_len++;
-if (n >= s2_len)
-n = s2_len;
-char *result = malloc((s1_len + n + 1) * sizeof(char));
-if (result == NULL)
+unsigned int i, j, len;
+char *ptr;
+if (strlen(s2) < n)
+{
+n = strlen(s2);
+}
+len = strlen(s1) + n + 1;
+ptr = malloc(sizeof(char) * len);
+if (ptr == NULL)
+{
 return (NULL);
-char *ptr = result;
-while (*s1 != '\0')
+}
+for (i = 0; s1[i] != '\0'; i++)
 {
-*ptr = *s1;
-ptr++;
-s1++;
+ptr[i] = s1[i];
 }
-while (n > 0)
+for (j = 0; j < n; j++)
 {
-*ptr = *s2;
-ptr++;
-s2++;
-n--;
+ptr[i + j] = s2[j];
 }
-*ptr = '\0';
-return (result);
+return (ptr);
 }
-
-
