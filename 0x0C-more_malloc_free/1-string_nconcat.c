@@ -22,7 +22,7 @@ while (*s2 != '\0')
 len2++;
 s2++;
 }
-if (len2 < n)
+if (len2 <= n)
 {
 n = len2;
 }
