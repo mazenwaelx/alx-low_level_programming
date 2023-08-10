@@ -27,7 +27,6 @@ n = len2;
 ar = malloc((len1 + n + 1) * sizeof(char));
 if (ar == NULL)
 return (NULL);
-
 ptr = ar;
 while (*s1 != '\0')
 {
@@ -42,6 +41,5 @@ ptr++;
 s2++;
 n--;
 }
-*ptr = '\0';
 return (ar);
 }
