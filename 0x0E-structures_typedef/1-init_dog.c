@@ -1,10 +1,13 @@
 #include "dog.h"
+
 /**
  * init_dog - Entry point
+ *
  * @d: bo
  * @name: bbe
  * @age: bgf
  * @owner: go
+ *
  * Return: void.
 */
 
