@@ -7,7 +7,7 @@
  * struct token - f
  *
  * @token: lol
- * @f gg
+ * @f: gg
 */
 
 typedef struct token
@@ -15,6 +15,7 @@ typedef struct token
 char *token;
 void (*f)(char *, va_list)
 } token_t;
+
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
