@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdarg.h>
+
 /**
  * struct token - f
  *
@@ -13,7 +14,7 @@
 typedef struct token
 {
 char *token;
-void (*f)(char *, va_list)
+void (*f)(char *, va_list);
 } token_t;
 
 int _putchar(char c);
