@@ -59,9 +59,9 @@ int i = 0, j;
 char *separator = "";
 va_list ap;
 token_t tokens[] = {
-{"c". format_char},
+{"c", format_char},
 {"i", format_int},
-{"f", format_float}
+{"f", format_float},
 {"s", format_string},
 {NULL, NULL}
 };
