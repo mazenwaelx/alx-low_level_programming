@@ -11,15 +11,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 unsigned int i = n;
 char *str;
 va_list args;
+if (!n)
+{
+printf("\n");
+return;
+}
 va_start(args, n);
 while (i--)
-str = va_arg(args, char *);
-if (str == NULL)
-printf("(nil)");
-else
-printf("%s", str);
-if (separator != NULL && i < n - 1)
-printf("%s", separator);
-}
+printf("%s%s", (str = va_arg(ap, char *)) ? str : "(nil)", i ? (separator ? separator : "") : "\n");
 va_end(args);
 }
