@@ -7,7 +7,7 @@
 */
 void format_char(char *separator, va_list ap)
 {
-printf("%s%c", separator, va_arg(ap , int));
+printf("%s%c", separator, va_arg(ap, int));
 }
 /**
  * format_int - bbe
@@ -17,11 +17,11 @@ printf("%s%c", separator, va_arg(ap , int));
 */
 void format_int(char *separator, va_list ap)
 {
-printf("%s%d", separator, va_arg(ap , int));
+printf("%s%d", separator, va_arg(ap, int));
 }
 
 /**
- * format_int - bbe
+ * format_float - bbe
  * @separator: ff
  * @ap: gg
  * Return: Always 0
@@ -32,7 +32,7 @@ printf("%s%f", separator, va_arg(ap, double));
 }
 
 /**
- * format_int - bbe
+ * format_string - bbe
  * @separator: ff
  * @ap: gg
  * Return: Always 0
@@ -47,7 +47,7 @@ printf("%s%s", separator, str);
 }
 
 /**
- * print_strings - bbe
+ * print_all - bbe
  * @format: ff
  * @...: gg
  * Return: Always 0
@@ -56,7 +56,7 @@ printf("%s%s", separator, str);
 void print_all(const char * const format, ...)
 {
 int i = 0, j;
-char * separator = "";
+char *separator = "";
 va_list ap;
 token_t tokens[] = {
 {"c". format_char},
