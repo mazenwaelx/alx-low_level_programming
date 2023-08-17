@@ -1,85 +1,26 @@
 #include "variadic_functions.h"
-/**
- * format_char - bbe
- * @separator: ff
- * @ap: gg
- * Return: Always 0
-*/
-void format_char(char *separator, va_list ap)
-{
-printf("%s%c", separator, va_arg(ap , int));
-}
-/**
- * format_int - bbe
- * @separator: ff
- * @ap: gg
- * Return: Always 0
-*/
-void format_int(char *separator, va_list ap)
-{
-printf("%s%d", separator, va_arg(ap , int));
-}
 
 /**
- * format_int - bbe
- * @separator: ff
- * @ap: gg
- * Return: Always 0
+ * print_strings - f
+ *
+ * @separator: lol
+ * @n: gg
+ * @...:gg
 */
-void format_float(char *separator, va_list ap)
+void print_strings(const char *separator, const unsigned int n, ...)
 {
-printf("%s%f", separator, va_arg(ap, double));
-}
-
-/**
- * format_int - bbe
- * @separator: ff
- * @ap: gg
- * Return: Always 0
-*/
-void format_string(char *separator, va_list ap)
-{
-char *str = va_arg(ap, char*);
-switch ((int)(!str))
-case 1:
-str = "(nil)";
-printf("%s%s", separator, str);
-}
-
-/**
- * print_strings - bbe
- * @format: ff
- * @...: gg
- * Return: Always 0
-*/
-
-void print_all(const char * const format, ...)
-{
-int i = 0, j;
-char * separator = "";
+int i =n;
+char *str;
 va_list ap;
-token_t tokens[] = {
-{"c". format_char},
-{"i", format_int},
-{"f", format_float}
-{"s", format_string},
-{NULL, NULL}
-};
-va_start(ap, format);
-while (format && format[i])
+if (!n)
 {
-j = 0;
-while (tokens[j].token)
-{
-if (format[i] == tokens[j].token[0])
-{
-tokens[j].f(separator, ap);
-separator = ", ";
-}
-j++;
-}
-i++;
-}
 printf("\n");
+return;
+}
+va_start(ap, n);
+while(i--)
+printf("%s%s", (str = va_arg(ap, char*)) ? str : "(nil)",
+i ? (separator ? separator : "") : "\n");
 va_end(ap);
 }
+
