@@ -20,4 +20,4 @@ sum += value;
 }
 va_end(args);
 return (sum);
-
+}
