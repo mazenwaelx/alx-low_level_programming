@@ -2,7 +2,7 @@
 /**
  * list_len - lol
  * @h: lol
- * 
+ *
  * Return: always 0
 */
 
