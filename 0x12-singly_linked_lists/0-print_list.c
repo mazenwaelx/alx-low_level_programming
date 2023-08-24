@@ -1,16 +1,11 @@
 #include "lists.h"
-///#include "lists.h"
 /**
  * print_list - lol
- * h: lol
- * 
+ * @h: lol
+ *
  * Return: always 0
 */
 
-typedef struct list {
-    char *str;
-    struct list *next;
-} list_t;
 
 size_t print_list(const list_t *h)
 {
