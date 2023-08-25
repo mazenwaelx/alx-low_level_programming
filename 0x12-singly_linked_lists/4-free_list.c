@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * add_node - lol
+ * free_list - lol
  * @head: lol
- * @str: lol
  * Return: always 0
 */
 
