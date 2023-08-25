@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * pre_main - Function that prints a message before the main function is executed
+ * pre_main - Function that prints a message before the main function is 
  */
 void pre_main(void) __attribute__((constructor));
 
