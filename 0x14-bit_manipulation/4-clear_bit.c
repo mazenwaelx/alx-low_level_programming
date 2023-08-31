@@ -4,6 +4,7 @@
  * clear_bit - Prints the binary representation of a number.
  * @n: Unsigned long int number to print in binary.
  * @index: lol.
+ * Retrun: lol
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
