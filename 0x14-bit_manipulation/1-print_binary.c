@@ -1,17 +1,15 @@
 #include "main.h"
 
 /**
- * print_binary - bbe
- * @n: ff
- * Return: Always 0
-*/
-
+ * print_binary - Prints the binary representation of a number.
+ * @n: Unsigned long int number to print in binary.
+ */
 void print_binary(unsigned long int n)
 {
-unsigned long int num = 1;
+unsigned long int mask = 1;
 int size = sizeof(unsigned long int) * 8;
 int i;
-num <<= (size - 1);
+mask <<= (size - 1);
 if (n == 0)
 {
 _putchar('0');
@@ -19,10 +17,10 @@ return;
 }
 for (i = 0; i < size; i++)
 {
-if ((n & num) != 0)
+if ((n & mask) != 0)
 _putchar('1');
 else
 _putchar('0');
-num >>= 1;
+mask >>= 1;
 }
 }
